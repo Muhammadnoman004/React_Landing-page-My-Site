@@ -1,0 +1,62 @@
+.mainDiv{
+    background-color: #2f8555;
+    padding: 70px;
+    width: 100%;
+}
+#mysite{
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+}
+#Dino{
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+#DocBtn{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    width: 390px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-image: url("https://5.imimg.com/data5/TK/MB/MY-69827479/digital-stop-watch-500x500.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 300px;
+    background-size: 35px;
+    padding-right: 40px;
+
+}
+@media screen and (max-width: 520px) {
+    #DocBtn{
+        width: 280px;
+        font-size: medium;
+        background-image: url("https://5.imimg.com/data5/TK/MB/MY-69827479/digital-stop-watch-500x500.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 230px;
+        background-size: 35px;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    #DocBtn{
+        width: 160px;
+        font-size: 8px;
+        background-image: url("https://5.imimg.com/data5/TK/MB/MY-69827479/digital-stop-watch-500x500.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 120px;
+        background-size: 25px;
+    }
+    #mysite{
+        font-size: 35px;
+    }
+    #Dino{
+        font-size: 17px;
+    }
+    
+}

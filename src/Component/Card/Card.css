@@ -1,6 +1,5 @@
 .CardDiv{
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: auto;
     margin-top: 20px;
 }
@@ -13,4 +12,3 @@
 #para{
     padding-top: 20px;
 }
-

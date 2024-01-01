@@ -1,14 +1,19 @@
-import React from 'react'
+import React , {useState} from 'react'
 import "./Navbar.css"
 import Logo from "./Logo.png"
 import arrow from "./arrow.png"
 import Sun from "./Sun.png"
 
-function Navbar() {
+function Navbar({darkThem , setdarkThem}) {
+
+    function handledarkThem(){
+        setdarkThem(!darkThem);
+    }
+    
     return (
         <div>
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" id='navbar'>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme={`${darkThem ? 'dark' : ''}`}>
                 <div class="container-fluid">
                     <img id='logo' src={Logo} alt="" />
                     <a class="navbar-brand" href="#" id='navMysite'>My Site</a>
@@ -21,13 +26,13 @@ function Navbar() {
                                 <a class="nav-link active" aria-current="page" href="#">Tutorial</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link active" href="#">Blog</a>
                             </li>
                             <li class="nav-item SunArrow">
-                                <a class="nav-link" href="#">GitHub <img id='arrow' src={arrow} alt="" /></a>
+                                <a class="nav-link active" href="#">GitHub <img id='arrow'  src={arrow} alt="" /></a>
                             </li>
                             <li class="nav-item SunArrow">
-                                <a class="nav-link" href="#"><img id='sun' src={Sun} alt="" /></a>
+                                <a class="nav-link active" href="#"><img id='sun' src={Sun} className={`themeChangeDiv ${darkThem ? 'clicked' : ''}`} onClick={handledarkThem} alt="" /></a>
                             </li>
 
                         </ul>
